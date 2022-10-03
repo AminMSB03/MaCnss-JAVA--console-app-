@@ -1,4 +1,4 @@
-package metier.login;
+package metier.email;
 
 import java.util.Properties;
 
@@ -15,7 +15,7 @@ public class SendingEmail {
     public static void send() {
 
         // Recipient's email ID needs to be mentioned.
-        String to = "ettaqui88@gmail.com";
+        String to = "ettaqui88@gmail.com"; // email
 
         // Sender's email ID needs to be mentioned
         String from = "abdelghafourdev@gmail.com";
@@ -57,10 +57,10 @@ public class SendingEmail {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject("MaCnss : verification");
+            message.setSubject();//subject
 
             // Now set the actual message
-            message.setText( "bonjour");
+            message.setText("bonjour");//text
 
             System.out.println("sending...");
             // Send message
