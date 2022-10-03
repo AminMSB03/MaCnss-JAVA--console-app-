@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Macnss-Code/Macnss-Code.iml" filepath="$PROJECT_DIR$/Macnss-Code/Macnss-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/macnss.iml" filepath="$PROJECT_DIR$/.idea/macnss.iml" />
+    </modules>
+  </component>
+</project>
