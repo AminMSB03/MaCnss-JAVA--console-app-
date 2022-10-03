@@ -1,16 +1,13 @@
-package metier.login;
-import java.sql.*;
+package dao;
 
-public class Login {
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public  abstract class  Dao {
     public Connection conn;
 
-    public Login() throws Exception {
+    public Dao() throws Exception {
         Class.forName("org.postgresql.Driver");
         this.conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/cnss","postgres","vendredi1120deux!");
     }
-
-    public void LoginOfEmployee(String column ,String email, String password) throws Exception {
-
-    }
-
 }
