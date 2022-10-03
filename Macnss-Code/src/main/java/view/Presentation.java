@@ -3,8 +3,8 @@ package view;
 import java.util.Scanner;
 
 public class Presentation {
+    private static final Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         System.out.println("-----------------------------------------------" +
                 "-------------------------------Welcome to MaCnss---------------------------------------" +
                 "---------------------------------------");
@@ -22,14 +22,24 @@ public class Presentation {
                     loginEmployee();
                     break;
                 case 2:
-                    System.out.println("welcome");
+                    loginAdmin();
                     break;
             }
         }
     }
 
     public static void loginEmployee(){
-        Scanner input = new Scanner(System.in);
+
+        System.out.printf("\nEnter your email : ");
+        String email = input.nextLine();
+
+        System.out.printf("\nEnter your password : ");
+        String password = input.nextLine();
+
+
+
+    }
+    public static void  loginAdmin(){
 
         System.out.printf("\nEnter your email : ");
         String email = input.nextLine();
