@@ -1,9 +1,12 @@
 package view;
 
+import Cookie.Cookie;
+import metier.login.Login;
+
 import java.util.Scanner;
 
 public class Presentation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("-----------------------------------------------" +
                 "-------------------------------Welcome to MaCnss---------------------------------------" +
@@ -12,7 +15,7 @@ public class Presentation {
         System.out.printf("%60s","2-Patient");
 
         int personType = 4;
-        while(personType>2){
+        while(personType!=0){
         System.out.print("\nChoose who are you : ");
         personType = Integer.parseInt(input.nextLine());
 
@@ -25,10 +28,12 @@ public class Presentation {
                     System.out.println("welcome");
                     break;
             }
+
         }
     }
 
-    public static void loginEmployee(){
+    public static void loginEmployee() throws Exception {
+        Login login = new Login();
         Scanner input = new Scanner(System.in);
 
         System.out.printf("\nEnter your email : ");
@@ -38,8 +43,10 @@ public class Presentation {
         String password = input.nextLine();
 
 
-
+        login.LoginOfEmployee(email,password);
     }
+
+
 
 
 
