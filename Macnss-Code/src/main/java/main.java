@@ -11,9 +11,5 @@ public class main {
 
 
 
-        //Login login = new Login();
-        //login.emplyeeLogin("admin@admin.com","admin123");
-        SendingEmail.send();
-
     }
 }
