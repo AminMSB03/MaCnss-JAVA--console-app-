@@ -9,17 +9,8 @@ public class Login {
         this.conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/cnss","postgres","Ycode@2021");
     }
 
-    public void emplyeeLogin(String email, String password) throws Exception {
-        PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM users WHERE email LIKE ?");
-        ps.setString(1,email);
-        ResultSet resultSet = ps.executeQuery();
-
-        if(resultSet.next()) {
-            System.out.println(resultSet.getString("role"));
-        }
+    public void LoginOfEmployee(String column ,String email, String password) throws Exception {
 
     }
-    public void patientLogin(){
-        System.out.println("Patient");
-    }
+
 }

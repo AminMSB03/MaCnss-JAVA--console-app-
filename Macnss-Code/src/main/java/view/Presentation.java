@@ -1,3 +1,5 @@
+package view;
+
 import java.util.Scanner;
 
 public class Presentation {
@@ -17,13 +19,31 @@ public class Presentation {
 
             switch (personType){
                 case 1:
-                    System.out.println("welcoome");
+                    loginEmployee();
                     break;
                 case 2:
                     System.out.println("welcome");
                     break;
             }
         }
+    }
+
+    public static void loginEmployee(){
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("\nEnter your email : ");
+        String email = input.nextLine();
+
+        System.out.printf("\nEnter your password : ");
+        String password = input.nextLine();
+
+
 
     }
+
+
+
+
+
+
 }

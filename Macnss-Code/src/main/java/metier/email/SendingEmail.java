@@ -57,7 +57,7 @@ public class SendingEmail {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject();//subject
+            message.setSubject("fff");//subject
 
             // Now set the actual message
             message.setText("bonjour");//text
