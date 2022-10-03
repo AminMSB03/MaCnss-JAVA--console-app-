@@ -1,14 +1,19 @@
 import dao.Users;
 import metier.login.Login;
+import metier.login.SendingEmail;
 
 import java.util.UUID;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        Users login = new Users();
-        login.login("admin@admin.com","email");
 
 
+
+
+
+        //Login login = new Login();
+        //login.emplyeeLogin("admin@admin.com","admin123");
+        SendingEmail.send();
 
     }
 }
