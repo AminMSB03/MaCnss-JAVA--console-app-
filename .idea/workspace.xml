@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" afterDir="false" />
-    </list>
+    <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +83,7 @@
       <updated>1664787530614</updated>
       <workItem from="1664787533770" duration="2933000" />
       <workItem from="1664793048562" duration="12574000" />
-      <workItem from="1664871187999" duration="11371000" />
+      <workItem from="1664871187999" duration="11540000" />
     </task>
     <servers />
   </component>
