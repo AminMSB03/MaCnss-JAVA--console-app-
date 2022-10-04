@@ -1,11 +1,12 @@
 package dao;
 
-import Cookie.Cookie;
+import cookies.Cookie;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class Users extends Dao {
+public class Users extends Dao{
+
     public Users() throws Exception {
 
     }

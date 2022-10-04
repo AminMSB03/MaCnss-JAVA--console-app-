@@ -1,5 +1,5 @@
 package metier.login;
-import Cookie.Cookie;
+import cookies.Cookie;
 import dao.Users;
 
 import java.sql.*;
@@ -10,9 +10,13 @@ public class Login {
 
 
     public boolean LoginOfEmployee(String email, String password) throws Exception {
+
         Users user = new Users();
         Cookie auth = user.login(email,"email");
-        if(auth!=null){
+
+
+
+        if((auth.getEmail())!=null){
             if(auth.getPassword().equals(password)){
                 Cookie.setAuthId(auth.getId());
                 Cookie.setAuthEmail(auth.getEmail());
@@ -21,8 +25,9 @@ public class Login {
             }else{
                 return false;
             }
+        }else {
+            return false;
         }
-        return false;
 
 
     }
