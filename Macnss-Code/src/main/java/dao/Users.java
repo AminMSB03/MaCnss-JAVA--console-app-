@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Users extends Dao {
 
@@ -19,31 +20,52 @@ public class Users extends Dao {
             System.out.println(resultSet.getString("role"));
         }
     }
-    public ResultSet CreateAgent(String email,String password) throws Exception{
-        PreparedStatement ps = this.conn.prepareStatement("INSERT INTO users (email, password, role, matricule)VALUES (?,?,?,?);");
-        ps.setString(1,email);
-        ps.setString(2,password);
-        ps.setString(3,"agent");
-        ps.setString(4,null);
+    public void CreateAgent(String email,String password) throws Exception{
 
-        return ps.executeQuery();
+        try{
+            PreparedStatement ps = this.conn.prepareStatement("INSERT INTO users (email, password, role, matricule)VALUES (?,?,?,?);");
+            ps.setString(1,email);
+            ps.setString(2,password);
+            ps.setString(3,"agent");
+            ps.setString(4,null);
+
+            ResultSet res=ps.executeQuery();
+        }
+        catch(SQLException ex){
+            System.out.println(ex.getMessage());
+        }
+
 
     }
-    public ResultSet DeleteAgent(int id) throws Exception{
-        PreparedStatement ps = this.conn.prepareStatement("DELETE FROM users WHERE id = ? ;");
+    public void DeleteAgent(int id) throws Exception{
+        try{
+            PreparedStatement ps = this.conn.prepareStatement("DELETE FROM users WHERE id = ? ;");
 
-        ps.setInt(1,id);
-        return  ps.executeQuery();
+            ps.setInt(1,id);
+
+            ps.executeQuery();
+
+        }
+        catch(SQLException ex){
+            System.out.println(ex.getMessage());
+        }
+
     }
-    public ResultSet UpdateAgent(int id,String email,String password) throws Exception{
+    public void UpdateAgent(int id,String email,String password) throws Exception{
 
-        PreparedStatement ps = this.conn.prepareStatement("UPDATE users set email= ?,password= ? where id=?;");
+        try{
+            PreparedStatement ps = this.conn.prepareStatement("update users set email = ? , password = ? where id = ?;");
 
-        ps.setString(1,email);
-        ps.setString(2,password);
-        ps.setInt(3,id);
-        
-        return  ps.executeQuery();
+            ps.setString(1,email);
+            ps.setString(2,password);
+            ps.setInt(3,id);
+
+            ps.executeQuery();
+        }
+
+        catch(SQLException ex){
+            System.out.println(ex.getMessage());
+        }
 
 
     }
@@ -51,8 +73,6 @@ public class Users extends Dao {
     public ResultSet DisplayAgent() throws Exception {
         PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM users where role = 'agent';");
         ResultSet resultSet = ps.executeQuery();
-
-
         return resultSet;
     }
 

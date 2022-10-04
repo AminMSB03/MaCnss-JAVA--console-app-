@@ -73,17 +73,18 @@ public class Presentation {
             System.out.println(displayAgent.getString(2));
         }
     }
+
     public static void deleteAgent() throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number of agent you want to delete : ");
         int id = input.nextInt();
 
         Users user = new Users();
-        ResultSet deleteAgent= user.DeleteAgent(id);
+        user.DeleteAgent(id);
 
-        if(deleteAgent.next()){
-            System.out.println("agent deleted successfully ");
-        }
+
+        System.out.println("agent deleted successfully ");
+
     }
 
     public static void updateAgent() throws Exception {
@@ -96,11 +97,9 @@ public class Presentation {
         String password = input.next();
 
         Users user = new Users();
-        ResultSet updateAgent = user.UpdateAgent(id,email,password);
+        user.UpdateAgent(id, email, password);
+        System.out.println("agent's info updated successfully ");
 
-        if(updateAgent.next()){
-            System.out.println("agent's info updated successfully ");
-        }
     }
 
     public static void createAgent() throws Exception {
@@ -112,13 +111,11 @@ public class Presentation {
         String password = input.next();
 
         Users user = new Users();
-        ResultSet createAgent = user.CreateAgent(email,password);
 
-        if(createAgent.next()){
-            System.out.println("agent added successfully ");
-        }
+        user.CreateAgent(email, password);
+
+        System.out.println("agent added successfully ");
     }
-
 
 
 }
