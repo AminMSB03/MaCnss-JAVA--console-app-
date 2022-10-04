@@ -1,10 +1,13 @@
 package view;
 
-// import Cookie.Cookie;
+import cookies.Cookie;
 
+import metier.email.SendingEmail;
 import metier.login.Login;
 
+import java.sql.Date;
 import java.sql.ResultSet;
+import java.util.Calendar;
 import java.util.Scanner;
 
 import dao.Users;
@@ -47,75 +50,53 @@ public class Presentation {
         String password = input.nextLine();
 
 
-        // login.LoginOfEmployee(email,password);
-    }
-
-    public static void loginAdmin() throws Exception {
-        Login login = new Login();
-        Scanner input = new Scanner(System.in);
-
-        System.out.printf("\nEnter your email : ");
-        String email = input.nextLine();
-
-        System.out.printf("\nEnter your password : ");
-        String password = input.nextLine();
-
-
-    }
-
-    public static void displayAgent() throws Exception {
-        Scanner input = new Scanner(System.in);
-        Users user = new Users();
-        ResultSet displayAgent = user.DisplayAgent();
-        while (displayAgent.next()) {
-            System.out.print(displayAgent.getInt(1));
-            System.out.print(": ");
-            System.out.println(displayAgent.getString(2));
+        Boolean loginTry = login.LoginOfEmployee(email,password);
+        if(loginTry){
+            String role = Cookie.getAuthRole();
+            switch (role){
+                case "agent":
+                    if(sendMail(email)){
+                        System.out.println("hello world!");
+                        AgentView agentView = new AgentView();
+                   }
+                    else{
+                        System.out.println("verification invalid");
+                    }
+                    break;
+                case "admin":
+                   AdminView adminView=new AdminView();
+                    break;
+            }
+        }else{
+            System.out.println("! FALSE INFOS  !");
         }
-    }
 
-    public static void deleteAgent() throws Exception {
+    }
+    public static boolean sendMail(String email) {
+        boolean flag = false;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of agent you want to delete : ");
-        int id = input.nextInt();
+        int num = (int) ((Math.random() * (9999 - 1111)) + 1111);
+        Calendar date = Calendar.getInstance();
+        long timeInSecs = date.getTimeInMillis();
+        Date afterAdding5Mins = new Date(timeInSecs + (5 * 60 * 1000));
+        SendingEmail.send(email, "Macnss verification", "This code " + num + " is valid only for 5 min");
+        System.out.print("Please check your email and enter the verification code here :");
+        int verificationCode = input.nextInt();
+        Date current_time = new Date(timeInSecs);
+        if (afterAdding5Mins.compareTo(current_time) > 0 && verificationCode == num) {
+            System.out.println("verification code is valid");
+            flag = true;
+        } else {
 
-        Users user = new Users();
-        user.DeleteAgent(id);
-
-
-        System.out.println("agent deleted successfully ");
-
+            flag = false;
+        }
+        return flag;
     }
 
-    public static void updateAgent() throws Exception {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of agent you want to update : ");
-        int id = input.nextInt();
-        System.out.println("enter new email");
-        String email = input.next();
-        System.out.println("enter new password");
-        String password = input.next();
 
-        Users user = new Users();
-        user.UpdateAgent(id, email, password);
-        System.out.println("agent's info updated successfully ");
 
-    }
 
-    public static void createAgent() throws Exception {
-        Scanner input = new Scanner(System.in);
 
-        System.out.println("enter email");
-        String email = input.next();
-        System.out.println("enter password");
-        String password = input.next();
-
-        Users user = new Users();
-
-        user.CreateAgent(email, password);
-
-        System.out.println("agent added successfully ");
-    }
 
 
 }

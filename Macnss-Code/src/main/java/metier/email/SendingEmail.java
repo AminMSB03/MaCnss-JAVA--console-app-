@@ -12,10 +12,10 @@ import javax.mail.internet.MimeMessage;
 
 public class SendingEmail {
 
-    public static void send() {
+    public static void send(String toAddress,String subject,String text) {
 
         // Recipient's email ID needs to be mentioned.
-        String to = "ettaqui88@gmail.com"; // email
+        String to = toAddress; // email
 
         // Sender's email ID needs to be mentioned
         String from = "abdelghafourdev@gmail.com";
@@ -36,15 +36,14 @@ public class SendingEmail {
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 
             protected PasswordAuthentication getPasswordAuthentication() {
-
                 return new PasswordAuthentication("abdelghafourdev@gmail.com", "nkkumlcylzxboqzp");
-
             }
 
         });
 
         // Used to debug SMTP issues
-        session.setDebug(true);
+//        session.setDebug(true);
+
 
         try {
             // Create a default MimeMessage object.
@@ -57,15 +56,13 @@ public class SendingEmail {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject("fff");//subject
+            message.setSubject(subject);
 
             // Now set the actual message
-            message.setText("bonjour");//text
+            message.setText(text);
 
-            System.out.println("sending...");
             // Send message
             Transport.send(message);
-            System.out.println("Sent message successfully....");
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package Cookie;
+package cookies;
 
 public class Cookie {
     private int id;

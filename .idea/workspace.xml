@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="" />
+    <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/Dossier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AdminView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AgentView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookie/Cookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/Cookie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/email/SendingEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/email/SendingEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/Cookie/Cookie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +72,12 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3321839",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,7 +85,20 @@
       <recent name="C:\java\macnss\Macnss-Code\src\main\java\metier\login" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Presentation">
+    <configuration name="Presentation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.Presentation" />
+      <module name="Macnss-Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="Macnss-Code" />
@@ -69,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Presentation" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -83,7 +123,7 @@
       <updated>1664787530614</updated>
       <workItem from="1664787533770" duration="2933000" />
       <workItem from="1664793048562" duration="12574000" />
-      <workItem from="1664871187999" duration="11540000" />
+      <workItem from="1664871187999" duration="20005000" />
     </task>
     <servers />
   </component>
