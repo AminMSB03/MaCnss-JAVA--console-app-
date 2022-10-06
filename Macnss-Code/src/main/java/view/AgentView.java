@@ -14,18 +14,16 @@ public class AgentView {
 
 
     public Scanner scanner = new Scanner(System.in);
-    public AgentView() throws ParseException {
+    public AgentView() throws Exception {
         showInterface();
     }
-    public void showInterface() throws ParseException {
+    public void showInterface() throws Exception {
 
         int repeat = 0;
         do {
             System.out.println();
             System.out.printf(ANSI_BLACK+"\t\t"+ANSI_WHITE_BACKGROUND+" 1-refund request "+ANSI_RESET);
-            System.out.printf(ANSI_BLACK+"\t\t"+ANSI_WHITE_BACKGROUND+" 2-refund claim history "+ANSI_RESET);
-            System.out.printf(ANSI_BLACK+"\t\t"+ANSI_WHITE_BACKGROUND+" 3-modify on a request for reimbursement "+ANSI_RESET);
-            System.out.printf(ANSI_BLACK+"\t\t"+ANSI_WHITE_BACKGROUND+" 4- Log out "+ANSI_RESET);
+            System.out.printf(ANSI_BLACK+"\t\t"+ANSI_WHITE_BACKGROUND+" 2- Log out "+ANSI_RESET);
             System.out.println();
 
             System.out.printf("\nEnter your choice :  ");
@@ -36,12 +34,6 @@ public class AgentView {
                     Agent.addRefundRequest(scanner);
                     break;
                 case 2:
-                    System.out.println("historique");
-                    break;
-                case 3:
-                    System.out.println("update");
-                    break;
-                case 4:
                     repeat =99;
                     break;
             }

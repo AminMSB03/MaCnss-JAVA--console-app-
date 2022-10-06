@@ -38,11 +38,11 @@ public class Admin {
 
     public static void updateAgent() throws Exception {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of agent you want to update : ");
+        System.out.print("Enter the number of agent you want to update : ");
         int id = input.nextInt();
-        System.out.println("enter new email");
+        System.out.print("enter new email");
         String email = input.next();
-        System.out.println("enter new password");
+        System.out.print("enter new password");
         String password = input.next();
 
         Users user = new Users();
@@ -54,9 +54,9 @@ public class Admin {
     public static void createAgent() throws Exception {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("enter email");
+        System.out.print("enter email");
         String email = input.next();
-        System.out.println("enter password");
+        System.out.print("enter password");
         String password = input.next();
 
         Users user = new Users();

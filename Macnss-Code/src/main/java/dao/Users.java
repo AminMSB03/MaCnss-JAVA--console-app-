@@ -1,11 +1,12 @@
 package dao;
+
 import cookies.Cookie;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Users extends Dao {
-
+public class Users extends Dao{
 
     public Users() throws Exception {
 
@@ -25,7 +26,19 @@ public class Users extends Dao {
             cookie.setPassword(resultSet.getString("password"));
             cookie.setRole(resultSet.getString("role"));
         }
+
+
         return cookie;
+    }
+
+    public String getPatient(String matricule) throws SQLException {
+        PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM users WHERE matricule LIKE ?");
+        ps.setString(1, matricule);
+        ResultSet result = ps.executeQuery();
+        if(result.next()){
+            return result.getString("email");
+        }
+        return null;
     }
     public void CreateAgent(String email,String password) throws Exception{
 
@@ -39,7 +52,7 @@ public class Users extends Dao {
             ResultSet res=ps.executeQuery();
         }
         catch(SQLException ex){
-            System.out.println(ex.getMessage());
+            ex.getMessage();
         }
 
 
@@ -54,7 +67,7 @@ public class Users extends Dao {
 
         }
         catch(SQLException ex){
-            System.out.println(ex.getMessage());
+            ex.getMessage();
         }
 
     }
@@ -71,12 +84,11 @@ public class Users extends Dao {
         }
 
         catch(SQLException ex){
-            System.out.println(ex.getMessage());
+            ex.getMessage();
         }
 
 
     }
-
     public ResultSet DisplayAgent() throws Exception {
         PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM users where role = 'agent';");
         ResultSet resultSet = ps.executeQuery();
@@ -95,8 +107,5 @@ public class Users extends Dao {
         ResultSet resultSet = ps.executeQuery();
         return resultSet;
     }
-
-
-
 
 }

@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/PatientView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Medication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/DossierNow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Dossier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/patient/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/patient/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AgentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AgentView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/PatientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/PatientView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/AdminView.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/AdminView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Patient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/patient/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/patient/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/PatientView.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/PatientView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +123,7 @@
       <workItem from="1664793048562" duration="12574000" />
       <workItem from="1664871187999" duration="20773000" />
       <workItem from="1664958085833" duration="1456000" />
-      <workItem from="1665044189827" duration="4709000" />
+      <workItem from="1665044189827" duration="10023000" />
     </task>
     <servers />
   </component>

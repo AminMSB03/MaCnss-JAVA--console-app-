@@ -1,6 +1,6 @@
 package view;
 
-import metier.employee.Patient;
+import metier.patient.Patient;
 
 import java.text.ParseException;
 import java.util.Scanner;

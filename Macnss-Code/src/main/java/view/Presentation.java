@@ -104,8 +104,9 @@ public class Presentation {
         Boolean loginTry = login.loginOfEmployee(matricule,password,"matricule");
         if(loginTry){
             PatientView PatientView = new PatientView(matricule);
-
-
+        }
+        else{
+            System.out.println("invalid info");
         }
 
     }
