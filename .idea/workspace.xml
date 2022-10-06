@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58bdc1d0-72b1-497b-acf7-c0ae8b9217b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/Dossier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AdminView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AgentView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/PatientView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookie/Cookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookies/Cookie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/email/SendingEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/email/SendingEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/Cookie/Cookie.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/email/SendingEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/AdminView.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/AdminView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,30 +44,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-18",
-    "last_opened_file_path": "C:/java/macnss/Macnss-Code/src/main/java/metier/login",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3321839",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java/macnss/Macnss-Code/src/main/java/metier/login&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3321839&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\java\macnss\Macnss-Code\src\main\java\metier\login" />
@@ -123,7 +111,9 @@
       <updated>1664787530614</updated>
       <workItem from="1664787533770" duration="2933000" />
       <workItem from="1664793048562" duration="12574000" />
-      <workItem from="1664871187999" duration="20005000" />
+      <workItem from="1664871187999" duration="20773000" />
+      <workItem from="1664958085833" duration="1456000" />
+      <workItem from="1665044189827" duration="4709000" />
     </task>
     <servers />
   </component>

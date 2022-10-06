@@ -15,9 +15,9 @@ public class Login {
 
 
 
-    public boolean LoginOfEmployee(String email, String password) throws Exception {
+    public boolean loginOfEmployee(String email, String password,String column) throws Exception {
         Users user = new Users();
-        Cookie auth = user.login(email, "email");
+        Cookie auth = user.login(email, column);
         if (auth != null) {
             if (auth.getPassword().equals(password)) {
                 Cookie.setAuthId(auth.getId());
@@ -36,6 +36,7 @@ public class Login {
 
 
     }
+
 
 
 }

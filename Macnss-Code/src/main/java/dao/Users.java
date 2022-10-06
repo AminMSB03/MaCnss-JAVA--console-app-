@@ -83,6 +83,19 @@ public class Users extends Dao {
         return resultSet;
     }
 
+    public ResultSet DisplayFolders(String matricule) throws Exception {
+        PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM dossier where patientid =? ;");
+        ps.setString(1,matricule);
+        ResultSet resultSet = ps.executeQuery();
+        return resultSet;
+    }
+    public ResultSet DisplayInfo(String matricule) throws Exception {
+        PreparedStatement ps = this.conn.prepareStatement("SELECT * FROM users where matricule = ?;");
+        ps.setString(1,matricule);
+        ResultSet resultSet = ps.executeQuery();
+        return resultSet;
+    }
+
 
 
 

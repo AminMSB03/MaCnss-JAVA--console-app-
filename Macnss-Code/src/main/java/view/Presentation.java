@@ -32,7 +32,7 @@ public class Presentation {
                     loginEmployee();
                     break;
                 case 2:
-                    System.out.println("welcome");
+                    loginPatient();
                     break;
             }
 
@@ -50,13 +50,12 @@ public class Presentation {
         String password = input.nextLine();
 
 
-        Boolean loginTry = login.LoginOfEmployee(email,password);
+        Boolean loginTry = login.loginOfEmployee(email,password,"email");
         if(loginTry){
             String role = Cookie.getAuthRole();
             switch (role){
                 case "agent":
                     if(sendMail(email)){
-                        System.out.println("hello world!");
                         AgentView agentView = new AgentView();
                    }
                     else{
@@ -91,6 +90,24 @@ public class Presentation {
             flag = false;
         }
         return flag;
+    }
+
+    public static void  loginPatient() throws Exception{
+        Login login = new Login();
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("\nEnter your matricule : ");
+        String matricule = input.nextLine();
+
+        System.out.printf("\nEnter your password : ");
+        String password = input.nextLine();
+        Boolean loginTry = login.loginOfEmployee(matricule,password,"matricule");
+        if(loginTry){
+            PatientView PatientView = new PatientView(matricule);
+
+
+        }
+
     }
 
 
