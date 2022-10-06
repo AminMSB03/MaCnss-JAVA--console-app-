@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46cf966f-3193-45e2-85c0-97b02478528c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/AgentView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/Cookie/Cookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/cookie/Cookie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/dao/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/employee/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/metier/login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/src/main/java/view/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/Cookie/Cookie.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/Cookie/Cookie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/dao/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/employee/Agent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/metier/login/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Macnss-Code/target/classes/view/Presentation.class" afterDir="false" />
-    </list>
+    <list default="true" id="46cf966f-3193-45e2-85c0-97b02478528c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +51,7 @@
       <updated>1664870781701</updated>
       <workItem from="1664870793199" duration="83000" />
       <workItem from="1664870925161" duration="744000" />
+      <workItem from="1664958385465" duration="16000" />
     </task>
     <servers />
   </component>

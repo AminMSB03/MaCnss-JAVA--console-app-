@@ -1,6 +1,6 @@
 package cookies;
 
-public class Dossier {
+public class DossierNow {
     String id;
     String status;
     String patientId;
